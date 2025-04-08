@@ -1,17 +1,17 @@
-body {font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff8f0;
-    color: #333;}
-  
-  header { background-color: #1490b6;
-    color: white;
-    padding: 22px;
-    text-align: center;}
-  
-  section {padding: 16px;}
-  
-  footer { background-color: #eee;
-    text-align: center;
-    padding: 10px;}
+body {font-family: Verdana, Tahoma, sans-serif, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;}
+
+header { background-color: #f55bd1;
+  color: white;
+  padding: 22px;
+  text-align: center;}
+
+section {padding: 16px;}
+
+footer { background-color: #eee;
+  text-align: center;
+  padding: 10px;}
   
