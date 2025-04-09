@@ -5,6 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Juice Menu</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f3f3f3;
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .tile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border: 2px dotted #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.03);
+    }
+
+    .tile img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+
+    .tile span {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #f3f3f3;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,51 +83,39 @@
 
     <!-- JUICE TILE SECTION -->
     <h2>Juices</h2>
-    <div class="card-container">
-      <div class="card">
+    <div class="tile-grid">
+      <div class="tile">
         <img src="Gentle Green.jpg" alt="Gentle Green">
-        <h3>Gentle Green</h3>
-        <p>Apple, Cucumber, Spinach</p>
+        <span>Gentle Green</span>
       </div>
-
-      <div class="card">
+      <div class="tile">
         <img src="386-rinse-rebeet.jpg" alt="Rinse Rebeet">
-        <h3>Rinse Rebeet</h3>
-        <p>Beetroot, Carrot, Orange</p>
+        <span>Rinse Rebeet</span>
       </div>
-
-      <div class="card">
+      <div class="tile">
         <img src="Tumeric Tonic .jpg" alt="Turmeric Tonic">
-        <h3>Turmeric Tonic</h3>
-        <p>Orange, Lemon, Ginger</p>
+        <span>Turmeric Tonic</span>
       </div>
-
-      <div class="card">
+      <div class="tile">
         <img src="399-coco-classic.jpg" alt="Coco Classic">
-        <h3>Coco Classic</h3>
-        <p>Coconut, Aloe Vera, Honey</p>
+        <span>Coco Classic</span>
       </div>
     </div>
 
     <!-- SMOOTHIE BOWL TILE SECTION -->
     <h2>Smoothie Bowls</h2>
-    <div class="card-container">
-      <div class="card">
+    <div class="tile-grid">
+      <div class="tile">
         <img src="416-super.jpg" alt="Superman Bowl">
-        <h3>Superman Bowl</h3>
-        <p>Strawberries, Blueberries, Banana</p>
+        <span>Superman Bowl</span>
       </div>
-
-      <div class="card">
+      <div class="tile">
         <img src="465-waterboy.jpg.jpg" alt="Water Boy Bowl">
-        <h3>Water Boy Bowl</h3>
-        <p>Blue Spirulina, Blackberries, Dates</p>
+        <span>Water Boy Bowl</span>
       </div>
-
-      <div class="card">
+      <div class="tile">
         <img src="453-cacao-monster.jpg" alt="Cacao Monster Bowl">
-        <h3>Cacao Monster Bowl</h3>
-        <p>Coconut, Vanilla, Aloe Vera</p>
+        <span>Cacao Monster Bowl</span>
       </div>
     </div>
   </section>
@@ -72,6 +127,4 @@
   </footer>
 </body>
 </html>
-
-
 
